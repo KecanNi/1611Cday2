@@ -28,7 +28,7 @@
             <div class="list">
                 <dl>
                     <dt>
-                        <i class="iconfont icon-tuichu one active" id="btn1"></i>
+                        <i class="iconfont icon-tuichu one active" ></i>
                     </dt>
                     <dd>
                         电源
@@ -36,7 +36,7 @@
                 </dl>
                 <dl>
                     <dt>
-                        <i class="iconfont icon-iconhuidaoshouye" id="btn2"></i>
+                        <i class="iconfont icon-iconhuidaoshouye" ></i>
                     </dt>
                     <dd>
                         首页
@@ -44,7 +44,7 @@
                 </dl>
                 <dl>
                     <dt>
-                        <i class="iconfont icon-shouqi-01" id="btn3"></i>
+                        <i class="iconfont icon-shouqi-01" ></i>
                     </dt>
                     <dd>
                         菜单
@@ -52,7 +52,7 @@
                 </dl>
                 <dl>
                     <dt>
-                        <i class="iconfont icon-tijiaodingdan" id="btn4"></i>
+                        <i class="iconfont icon-tijiaodingdan" ></i>
                     </dt>
                     <dd>
                         截屏
@@ -86,7 +86,7 @@
     <script>
         var swiper = new Swiper('.swiper-container', {
             on: {
-                slideChangeTransitionStart: function () {
+                slideChange: function () {
                     var index = this.activeIndex;
                     $('.list').find('dl').eq(index).find('i').addClass('active').parents('dl').siblings().find(
                         'i').removeClass('active');
